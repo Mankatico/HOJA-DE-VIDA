@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './styles.css';
 import accesoImage from './assets/acceso.png';
 
-function Login() {
+function Register() {
   // Estados para almacenar los valores del correo electrónico y la contraseña
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -26,7 +26,7 @@ function Login() {
         <div className="form-value">
           <div>
             <figure>
-              <img className="logo-image" src={accesoImage} alt="Logo" />
+              <img className="logo-image" src={accesoImage} alt="Logo" />COMPONENTE REGISTRAR
             </figure>
           </div>
           <form action="" autoComplete='off'>
@@ -54,7 +54,7 @@ function Login() {
             {/* Opción de registro */}
             <div className="register">
               <p>
-                Don't have an account <a href='#'>Register</a>
+                Don't have an account <a href="#">Register</a>
               </p>
             </div>
           </form>
@@ -64,4 +64,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
