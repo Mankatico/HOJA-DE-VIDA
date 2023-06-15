@@ -1,0 +1,101 @@
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.image-container {
+    flex-shrink: 0;
+    /* Evita que el contenedor de la imagen se encoja */
+    padding-left: 10px;
+}
+
+.image-container img {
+    max-width: 150px;
+    /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding-right: 5px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quote-container {
+    width: 500px;
+    /* Ancho deseado para el cajón del último párrafo */
+    color: gray;
+    /* Color de texto gris */
+}
+
+.content-container h2 {
+    font-weight: bold;
+    /* Texto en negrita para h2 */
+}
+
+.content-container p {
+    color: gray;
+    /* Color de texto gris para párrafos */
+    font-weight: bold;
+    /* Texto en negrita para párrafos */
+}
+
+@media (max-width: 850px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .image-container {
+        margin-bottom: 10px;
+        /* Agrega un margen inferior opcional para separar la imagen del contenido */
+    }
+
+    .image-container img {
+        max-width: 60%;
+        /* La imagen ocupará todo el ancho disponible */
+        margin-right: 0;
+        /* Quita el margen derecho */
+        padding-top: 10px;
+    }
+
+    .content-container {
+        align-items: center;
+        /* Centra el contenido verticalmente */
+    }
+
+    .content-container h2 {
+        font-size: 1.2rem;
+        /* Cambia el tamaño de la fuente para adaptarse mejor a pantallas pequeñas */
+    }
+
+    .content-container p {
+        font-size: 0.7rem;
+        /* Cambia el tamaño de la fuente para adaptarse mejor a pantallas pequeñas */
+    }
+
+    .quote-container {
+
+        width: 200px;
+        /* Ancho deseado para el cajón del último párrafo */
+        color: gray;
+        /* Color de texto gris */
+
+    }
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgb(175, 175, 175), rgba(0, 0, 0, 0.863));
+}

@@ -54,7 +54,7 @@ function Login() {
             {/* Opción de registro */}
             <div className="register">
               <p>
-                Don't have an account <a href='#'>Register</a>
+                Don't have an account / <a href='#'>Register</a>
               </p>
             </div>
           </form>

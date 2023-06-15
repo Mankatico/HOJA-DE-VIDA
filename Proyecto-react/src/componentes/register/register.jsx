@@ -1,24 +1,32 @@
 import React, { useState } from 'react';
 import './styles.css';
-import accesoImage from './assets/acceso.png';
+import accesoImage from './assets/registered.png';
 
 function Register() {
-  // Estados para almacenar los valores del correo electrónico y la contraseña
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [password2, setPassword2] = useState('');
 
-  // Función para manejar cambios en el campo de correo electrónico
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
 
-  // Función para manejar cambios en el campo de contraseña
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
 
-  // Verificar si el formulario está completo (ambos campos no están vacíos)
-  const isFormComplete = email !== '' && password !== '';
+  const handlePassword2Change = (event) => {
+    setPassword2(event.target.value);
+  };
+
+  const capturarDatos = (event) => {
+    event.preventDefault();
+    if (password !== password2) {
+      alert('Verifica que las 2 password coincidan.');
+    }
+  };
+
+  const isFormComplete = email !== '' && password !== '' && password2 !== '';
 
   return (
     <section>
@@ -26,35 +34,29 @@ function Register() {
         <div className="form-value">
           <div>
             <figure>
-              <img className="logo-image" src={accesoImage} alt="Logo" />COMPONENTE REGISTRAR
+              <img className="logo-image" src={accesoImage} alt="Logo" />
             </figure>
           </div>
-          <form action="" autoComplete='off'>
-            {/* Campo de correo electrónico */}
+          <form action="" autoComplete="off" onSubmit={capturarDatos}>
             <div className="inputbox">
               <ion-icon className="small-icon" name="mail-outline"></ion-icon>
               <input type="email" required value={email} onChange={handleEmailChange} />
               <label>Email</label>
             </div>
-            {/* Campo de contraseña */}
             <div className="inputbox">
               <ion-icon className="small-icon" name="lock-closed-outline"></ion-icon>
               <input type="password" required value={password} onChange={handlePasswordChange} />
               <label>Password</label>
             </div>
-            {/* Opción de recordar contraseña */}
-            <div className="forget">
-              <label>
-                <input type="checkbox" />
-                Remember Me <a href="#">Forget Password</a>
-              </label>
+            <div className="inputbox">
+              <ion-icon className="small-icon" name="lock-closed-outline"></ion-icon>
+              <input type="password" required value={password2} onChange={handlePassword2Change} />
+              <label>Password</label>
             </div>
-            {/* Botón de inicio de sesión */}
-            <button className={isFormComplete ? 'complete' : ''}>Log in</button>
-            {/* Opción de registro */}
+            <button className={isFormComplete ? 'complete' : ''} type="submit">Register</button>
             <div className="register">
               <p>
-                Don't have an account <a href="#">Register</a>
+                You have an account / <a href="#">Login</a>
               </p>
             </div>
           </form>
