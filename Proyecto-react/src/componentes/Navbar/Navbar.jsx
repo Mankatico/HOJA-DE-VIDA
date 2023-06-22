@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles.css';
 import logo from './assets/menu.png';
-import logo1 from './assets/reanudar.png';
+import logo1 from './assets/perfil.png';
+
 
 const Navbar = () => {
     return (

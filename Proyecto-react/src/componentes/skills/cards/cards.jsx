@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Skills from '../skills';
+import Skills from '../PostgresBar/skills';
 import ImagenJs from '../assets/js.png';
 import ImagenPhp from '../assets/php.png';
 import ImagenCss from '../assets/css-3.png';
@@ -57,7 +57,7 @@ const Cards = () => {
                 <Card.Img variant="top" src={ImagenJAVA} />
                 <Card.Body>
                     <Card.Title>Java</Card.Title>
-                    <Skills bgcolor="#ff751a" progress='40' height={30}></Skills>
+                    <Skills bgcolor="#4dff4d" progress='70' height={30}></Skills>
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
