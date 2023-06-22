@@ -1,0 +1,9 @@
+.container-cards{
+    justify-content: center;
+    display: flex;
+  flex-wrap: wrap;
+}
+img {
+    max-width: 80px;
+    
+}

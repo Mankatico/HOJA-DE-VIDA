@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '../Header/header';
-import Register from '../register/register';
+
 import './styles.css';
+import Cards from '../skills/cards/cards';
 
 const Principal = () => {
     return (
-        <div>
+        <>
             <Header></Header>
-        </div>
+            <Cards></Cards>
+        </>
     );
 }
 
