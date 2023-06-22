@@ -4,13 +4,14 @@ import Image from './assets/Fondo_Gato.jpg';
 
 function Header() {
   return (
+    <>
     <header>
       <div className="header-container">
         <div className="image-container">
           <img src={Image} alt="Fondo_Gato" />
         </div>
         <div className="content-container">
-          <h2>ANDERSSON JULIAN MUÑOZ BUSTOS</h2>
+          <h1>ANDERSSON JULIAN MUÑOZ BUSTOS</h1>
           <p>Tecnólogo en gestión de redes y sistemas teleinformáticos</p>
           <p>Desarrollador Full Stack</p>
           <div className="quote-container">
@@ -18,7 +19,10 @@ function Header() {
           </div>
         </div>
       </div>
-    </header>
+      <div className="navbar-container">
+      </div>
+      </header>
+    </>
   );
 }
 

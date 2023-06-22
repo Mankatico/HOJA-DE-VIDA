@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import './App.css';
-import Login from './componentes/Login/Login.jsx';
-import Register from './componentes/register/register';
-import Header from './componentes/Header/header';
+import './App.css';;
+import Navbar from './componentes/Navbar/Navbar';
+import Principal from './componentes/Principal/Principal';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Header></Header>
+    <div className='body'>
+    <Navbar></Navbar>
+    <Principal></Principal>
+    </div>
     </>
   )
 }
