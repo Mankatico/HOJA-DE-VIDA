@@ -1,3 +1,12 @@
 *{
     margin-top: 10px;
 }
+.Tittle-Skills{
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(70, 0, 66);
+    font-family: cursive;
+    filter: drop-shadow(0px 0px 2px rgb(70, 0, 66));
+}

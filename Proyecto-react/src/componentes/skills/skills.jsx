@@ -4,9 +4,10 @@ import React from 'react';
 const Skills = ({ bgcolor, progress, height }) => {
     const Parentdiv = {
         height: height,
-        width: '100%',
+        width: '80%',
         borderRadius: 40,
-        margin: 0
+        margin: 0,
+        display: "contents"
     }
 
     const Childdiv = {
@@ -14,7 +15,11 @@ const Skills = ({ bgcolor, progress, height }) => {
         width: `${progress}%`,
         backgroundColor: bgcolor,
         borderRadius: 40,
-        textAlign: 'right'
+        textAlign: 'right',
+        margin: 0,
+        alignitems: "center",
+        justifycontent: "center",
+        display: "flow-root"
     }
 
     const progresstext = {
@@ -23,12 +28,13 @@ const Skills = ({ bgcolor, progress, height }) => {
         fontWeight: 900
     }
     return (
-        <div style={Parentdiv}>
-            <div style={Childdiv}>
-                <span style={progresstext}>{`${progress}%`}</span>
+        <>
+            <div style={Parentdiv}>
+                <div style={Childdiv}>
+                    <span style={progresstext}>{`${progress}%`}</span>
+                </div>
             </div>
-            
-        </div>
+        </>
     );
 }
 
