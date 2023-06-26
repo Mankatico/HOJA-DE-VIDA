@@ -36,7 +36,7 @@ const Cards = () => {
                 <Card.Img variant="top" src={ImagenPhp} />
                 <Card.Body>
                     <Card.Title>PHP</Card.Title>
-                    <Skills bgcolor="#4dff4d" progress='60' height={30}></Skills>
+                    <Skills bgcolor="#ffff1a" progress='60' height={30}></Skills>
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>

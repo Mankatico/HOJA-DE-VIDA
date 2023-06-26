@@ -13,7 +13,6 @@ const Navbar = () => {
                 <label htmlFor="toggler"><figure><img src={logo} alt="" /></figure></label>
                 <div className='menu'>
                     <ul className='list'>
-                        <li><a href="#">Inicio</a></li>
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Estudios</a></li>
                         <li><a href="#">Experiencia Laboral</a></li>
