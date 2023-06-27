@@ -10,9 +10,9 @@ const Principal = () => {
     return (
         <>
             <Header></Header>
-            <h1 className='Tittle-Skills'>Skills</h1>
-            <Cards></Cards>
-            <Education></Education>
+            <h1 className='Tittle-Skills' id="skills">Skills</h1>
+            <Cards ></Cards>
+            <Education ></Education>
             <Contacto></Contacto>
             <Footer></Footer>
         </>

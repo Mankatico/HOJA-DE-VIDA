@@ -6,8 +6,8 @@ import LogoUdemy from './assets/logo-udemy.jpg';
 
 const Education = () => {
     return (
-        <div>
-            <h1>Estudios</h1>
+        <div >
+            <h1 id='estudios'>Estudios</h1>
             <div className='Container-Cards-Education'>
                 <div className='Card'>
                     <figure>
