@@ -15,7 +15,6 @@ const Navbar = () => {
                     <ul className='list'>
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Estudios</a></li>
-                        <li><a href="#">Experiencia Laboral</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
