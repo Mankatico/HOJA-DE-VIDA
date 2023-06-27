@@ -1,18 +1,17 @@
 .header-container {
     display: flex;
-    align-items: flex-start;
-    padding-top: 10px;
-    background: transparent;
-    backdrop-filter: blur(20px);
+    align-items: center;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
+    padding-top: 150px;
   }
   
   .image-container {
     flex-shrink: 0;
     align-items: center;
     margin-right: 45px;
+    display: flex;
   }
   
   .image-container img {
@@ -20,7 +19,6 @@
     height: auto;
     border-radius: 90% 40% 90% 40%;
     margin-right: 10px;
-    filter: drop-shadow(0px 0px 5px #000000);
   }
   
   .content-container {
@@ -37,9 +35,9 @@
   }
   
   .content-container h1 {
-    font-weight: bold;
     color: rgb(70, 0, 66);
     transition: 0.8s;
+    font-family: cursive;
   }
   
   .content-container p {
@@ -47,6 +45,7 @@
     font-weight: bold;
     font-size: 1.2em;
     font-family: cursive;
+    padding: 0;
   }
   
   @media (max-width: 850px) {
@@ -54,15 +53,16 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding-top: 80px;
     }
   
     .image-container {
-      margin-bottom: 10px;
       justify-content: center;
     }
   
     .image-container img {
       max-width: 60%;
+      margin-right: -10px;
     }
   
     .content-container {

@@ -1,13 +1,21 @@
 import React from 'react';
 import Header from '../Header/header';
-import Register from '../register/register';
+import Education from '../Education/Education';
 import './styles.css';
+import Cards from '../skills/cards/cards';
+import Contacto from '../Contacto/Contacto';
+import Footer from '../Footer/Footer';
 
 const Principal = () => {
     return (
-        <div>
+        <>
             <Header></Header>
-        </div>
+            <h1 className='Tittle-Skills' id="skills">Skills</h1>
+            <Cards ></Cards>
+            <Education ></Education>
+            <Contacto></Contacto>
+            <Footer></Footer>
+        </>
     );
 }
 

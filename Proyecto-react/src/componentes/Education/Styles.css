@@ -1,0 +1,58 @@
+h1 {
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+    color: rgb(70, 0, 66);
+    font-family: cursive;
+    margin: 0;
+}
+p{
+    color: gray;
+    font-family: cursive;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+h3 {
+    margin: 0;
+    font-family: cursive;
+    font-size: 1em;
+}
+
+.Card {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 10px #63626383);
+    border-radius: 25px;
+    margin: 20px;
+    width: 540px;
+}
+
+.Container-Cards-Education {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.Cards-body {
+    display: flex;
+    flex-direction: column; /* Agregar esta propiedad */
+    align-items: center; /* Opcional para centrar verticalmente */
+}
+figure img{
+    max-width: 150px;
+    border-radius: 30px;
+}
+.proceso{
+    color: red;
+}
+.proceso1{
+    color: rgb(0, 255, 34);
+}
+.curso{
+    color: black;
+}

@@ -1,42 +1,62 @@
 .navbar {
-    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding: 15px;
-    border-radius: 20px;
+    border-radius: 60px;
     filter: drop-shadow(0px 0px 10px #f503e183);
     font-size: 1.2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 100;
+    margin-left: 5%;
 }
 
 .navbar a {
     text-decoration: none;
     color: inherit;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     text-decoration: underline rgb(195, 0, 255);
 }
-.logoNav{
+
+.logoNav {
     max-width: 50px;
+    margin-top: -10px;
 }
+
 img {
     max-width: 20px;
 }
-.Logo img{
+
+.Logo img {
     max-width: 100px;
     margin-left: 2em;
 }
+
 .list {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    padding-right: 20px;
+    margin-top: -10px;
 }
 
-#toggler, .navbar label {
+#toggler,
+.navbar label {
     display: none;
 }
+
+.scrolled {
+    top: 50px;
+    /* Ajusta la distancia desde la parte superior cuando el componente se mueve con el desplazamiento */
+    /* Otros estilos adicionales cuando el componente se mueve */
+}
+
 
 @media screen and (max-width:600px) {
     .menu {
@@ -44,20 +64,32 @@ img {
         max-height: 0;
         overflow: hidden;
     }
-    
+
+    .Logo img {
+        max-width: 40px;
+        margin-left: 2em;
+        margin-top: 1px;
+    }
+
     .list {
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
-    
+
+    label figure img {
+        max-width: 40px;
+        margin-top: -10px;
+        margin-top: 1px;
+    }
+
     .navbar label {
         display: inline-flex;
         align-items: center;
         cursor: pointer;
     }
-    
-    #toggler:checked ~ .menu {
+
+    #toggler:checked~.menu {
         max-height: 100%;
     }
 }

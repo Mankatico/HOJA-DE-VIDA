@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import Image from './assets/Fondo_Gato.jpg';
+import LogoColombia from './assets/colombia.png';
 
 function Header() {
   return (
@@ -12,8 +13,9 @@ function Header() {
         </div>
         <div className="content-container">
           <h1>ANDERSSON JULIAN MUÑOZ BUSTOS</h1>
-          <p>Tecnólogo en gestión de redes y sistemas teleinformáticos</p>
           <p>Desarrollador Full Stack</p>
+          <p>20 años</p>
+          <p><img src={LogoColombia} alt="" /></p>
           <div className="quote-container">
             <p>"Soy un apasionado de la programación, destacándome por mi comunicación efectiva y capacidad de liderazgo."</p>
           </div>
