@@ -11,11 +11,11 @@ const Footer = () => {
         <>
             <footer className="footer">
                 <div className="footer-Imgs">
-                    <a href="https://instagram.com/andersson_mun0z?igshid=NGExMmI2YTkyZg=="><img src={LogoIns} alt="" /></a>
-                    <a href="https://twitter.com/AnderssonMuoz3?t=77LB_BlupzveIicuLs_DrQ&s=09"><img src={LogoTwt} alt="" /></a>
-                    <a href="https://www.facebook.com/Mankatico?mibextid=ZbWKwL"><img src={LogoFac} alt="" /></a>
-                    <a href="https://github.com/Mankatico"><img src={LogoGit} alt="" /></a>
-                    <a href="https://wa.me/qr/BOXY2SPOIPNYL1"><img src={LogoWtt} alt="" /></a>
+                    <a href="https://instagram.com/andersson_mun0z?igshid=NGExMmI2YTkyZg==" className='i'><img src={LogoIns} alt="" /></a>
+                    <a href="https://twitter.com/AnderssonMuoz3?t=77LB_BlupzveIicuLs_DrQ&s=09" className='t'><img src={LogoTwt} alt="" /></a>
+                    <a href="https://www.facebook.com/Mankatico?mibextid=ZbWKwL" className='f'><img src={LogoFac} alt="" /></a>
+                    <a href="https://github.com/Mankatico" className='g'><img src={LogoGit} alt="" /></a>
+                    <a href="https://wa.me/qr/BOXY2SPOIPNYL1" className='w'><img src={LogoWtt} alt="" /></a>
                 </div>
                 <div className='footer-info'>
                     <h3>Andersson Muñoz</h3>

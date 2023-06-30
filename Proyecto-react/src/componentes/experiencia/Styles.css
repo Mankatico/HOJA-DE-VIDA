@@ -1,0 +1,13 @@
+
+.Container-Xp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Container-Xp img{
+    padding: 20px;
+    max-width: 200px;
+}
+.Xp-title{
+    font-size: 1.4em;
+}
