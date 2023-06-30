@@ -1,15 +1,14 @@
-body{
-    height: 100%;
-  }
-  
+@import 'animate.css';  
   
   .contact_form{  
     height: auto;
     border-radius: 10px;   
     background-color: #fbfbfb; 
     padding-left: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
-  
   
   input{
     background-color: #fbfbfb; 
@@ -59,8 +58,6 @@ body{
     width: 420px;   
     cursor: pointer;
   }
-  
-  
   button p{
     color: #fff; 
   }
@@ -83,17 +80,22 @@ body{
     color: #0e0e0e;   
   }
   
-  
-  p{
-    font-size: 14px; 
-    color: #0e0e0e; 
+  .Logo-Escribir{
+    animation: shakeX;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
   }
-  
-  
+  .aviso{
+    display: flex;
+    justify-content: flex-start;
+  }
   ::-webkit-input-placeholder {
    color: #a8a8a8;
   }
-  
+  .Logo-Escribir img{
+    max-width: 210px;
+  }
   
   ::-webkit-textarea-placeholder {
    color: #a8a8a8;
@@ -104,7 +106,6 @@ body{
     outline:0;
     border: 1px solid #97d848;
   }
-  
   
   .formulario textarea:focus{
     outline:0;
@@ -122,5 +123,17 @@ body{
     }
     .SubContacto{
         width: auto;
+    }
+    .contact_form{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      font-size: 1.5em;
+    }
+    .Logo-Escribir img{
+    max-width: 150px;
     }
   }
