@@ -36,6 +36,9 @@ const Navbar = () => {
                             <a onClick={() => buscar('estudios')}>Estudios</a>
                         </li>
                         <li>
+                            <a onClick={() => buscar('xp')}>Experiencia</a>
+                        </li>
+                        <li>
                             <a onClick={() => buscar('contacto')}>Contacto</a>
                         </li>
                     </ul>

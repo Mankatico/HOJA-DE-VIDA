@@ -56,3 +56,6 @@ figure img{
 .curso{
     color: black;
 }
+.Card:hover{
+    filter: drop-shadow(0px 0px 10px #2bff0083);
+}

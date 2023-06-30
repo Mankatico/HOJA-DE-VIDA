@@ -1,5 +1,6 @@
 import React from 'react';
 import './Styles.css';
+import LogoEscribir from './assets/escribir.png';
 
 const Contacto = () => {
     return (
@@ -17,7 +18,7 @@ const Contacto = () => {
                         </p>
                         <p>
                             <label htmlFor="email" className="colocar_email">Email
-                                <span className="obligatorio">*</span>
+                                <span className="obligatorio">..  *</span>
                             </label>
                             <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email" />
                         </p>
@@ -27,12 +28,15 @@ const Contacto = () => {
                             </label>
                             <textarea name="introducir_mensaje" className="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
                         </p>
-                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                        <button type="submit" name="enviar_formulario" id="enviar" className='enviar'><p>Enviar</p></button>
                         <p className="aviso">
                             <span className="obligatorio"> *</span>los campos son obligatorios.
                         </p>
                     </form>
                 </div>
+                <figure className='Logo-Escribir'>
+                    <img src={LogoEscribir} alt="" />
+                </figure>
             </div>
         </>
     );

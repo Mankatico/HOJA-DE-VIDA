@@ -1,9 +1,10 @@
 .navbar {
+    font-family: "Inter",sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 60px;
     filter: drop-shadow(0px 0px 10px #f503e183);
     font-size: 1.2em;
@@ -18,10 +19,15 @@
 .navbar a {
     text-decoration: none;
     color: inherit;
+    transition: 0.25s ease;
 }
 
-.navbar a:hover {
-    text-decoration: underline rgb(195, 0, 255);
+.navbar ul:hover a {
+    color: #575757;
+}
+.navbar ul:hover a:hover{
+    color: #f503e183;
+    box-shadow: 0 2px 0 0 currentColor;
 }
 
 .logoNav {
